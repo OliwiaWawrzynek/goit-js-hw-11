@@ -2,9 +2,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
-  color: #2f2f37;
+  color: steelblue;
   font-size: 16px;
   font-weight: 700;
+  background-color: lightcyan;
 }
 .container {
   display: flex;
@@ -12,12 +13,47 @@ body {
   justify-content: center;
   background-color: cornflowerblue;
   margin: 0 auto;
-  height: 60px;
+  height: 80px;
 }
 
-#search-form {
+.search-form {
   display: flex;
   flex-direction: row;
-  gap: 0px;
-  height: 40px;
+  gap: 20px;
+  height: 50px;
+  
+}
+input {
+  width: 250px;
+  margin: 5px;
+  padding: 8px;
+  border-style: none;
+  border-radius: 7px;
+  background-color: lightblue;
+  color: steelblue;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+button {
+  border-radius: 5px;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 7px;
+  border: 2px solid steelblue;
+  background-color: lightblue;
+  color: steelblue;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-style: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:focus {
+  background-color: steelblue;
+  color: lightblue;
+  box-shadow: 4px 4px 5px var(--blue), 2px 3px 2px var(--blue), 2px 2px 2px var(--blue);
+}
+
+::placeholder {
+  color: steelblue;
 }
